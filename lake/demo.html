@@ -1,0 +1,23 @@
+<html>
+	<head>
+		<script src="jquery-1.11.0.min.js"></script>
+		<script src="lake.js"></script>
+	</head>
+	<body>
+		<img id="lake-img" src="canvas.png" style="display: none;"/>
+	</body>
+	<script>
+	/**
+    speed：水波运动的速度。
+    scale：水波波峰的高低。
+    waves：水波的数量。
+	*/
+		$(function() {
+		  $('#lake-img').lake({
+			'speed': 1,
+			'scale': 0.5,
+			'waves': 10
+		  });
+		});
+	</script>
+</html>
