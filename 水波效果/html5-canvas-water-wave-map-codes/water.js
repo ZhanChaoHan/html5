@@ -16,6 +16,7 @@ const water = noWorkers => {
     let width, height, hwidth, hheight, size, map, oldind, newind;
     let textureBuffer8, textureBuffer32;
     let ripple, rippleBuffer8, rippleBuffer32;
+	const intervalTime=4000;
     const window = {
         CP: {
             shouldStopExecution(e) {},
@@ -60,7 +61,7 @@ const water = noWorkers => {
                 // start
                 run();
                 gloop();
-                setInterval(gloop, 4000);
+                setInterval(gloop, intervalTime);
                 break;
         }
     };
